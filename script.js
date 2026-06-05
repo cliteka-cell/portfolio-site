@@ -88,6 +88,28 @@
   document.querySelectorAll('.fade-in, .project-card').forEach(el => obs.observe(el));
 })();
 
+// Project filter tabs
+(function () {
+  const btns  = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('hidden', !match);
+        if (match && !card.classList.contains('visible')) {
+          card.classList.add('visible');
+        }
+      });
+    });
+  });
+})();
+
 // Contact form (Formspree)
 (function () {
   const form   = document.getElementById('contact-form');

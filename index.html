@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kerem — Developer & Trader</title>
-  <meta name="description" content="Portfolio of Kerem — developer and trader. Creator of Confluence Array, Trading Journal, and more."/>
-  <meta property="og:title" content="Kerem — Developer & Trader"/>
-  <meta property="og:description" content="Building tools at the intersection of trading and technology."/>
+  <title>Kerem — AI Engineer, NLP Researcher & Trader</title>
+  <meta name="description" content="Portfolio of Kerem — AI/LLM evaluator at Yandex, NLP researcher, and algorithmic trader. Creator of Confluence Array, Trading Journal, and more."/>
+  <meta property="og:title" content="Kerem — AI Engineer & Trader"/>
+  <meta property="og:description" content="Building at the intersection of language, machine learning, and financial markets."/>
   <meta property="og:type" content="website"/>
   <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg"/>
-  <link rel="stylesheet" href="style.css?v=1"/>
+  <link rel="stylesheet" href="style.css?v=2"/>
 </head>
 <body>
 
@@ -36,29 +36,35 @@
     <div class="hero-inner">
       <div class="hero-eyebrow">
         <span class="hero-eyebrow-dot"></span>
-        Developer &amp; Trader
+        AI/LLM Evaluator at Yandex &nbsp;·&nbsp; Developer &nbsp;·&nbsp; Trader
       </div>
-      <h1 class="hero-name">I build tools<br/>traders actually use.</h1>
+      <h1 class="hero-name">NLP. Markets.<br/>Code that ships.</h1>
       <p class="hero-tagline">
-        From <span>TradingView indicators</span> to full-stack trading apps —
-        I ship things that work at the intersection of markets and code.
+        Linguistics graduate from <span>Boğaziçi University</span>, now building at the intersection of
+        <span>natural language processing</span>, <span>machine learning</span>,
+        and <span>algorithmic trading</span>.
       </p>
       <div class="hero-ctas">
         <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-ghost">Get in touch</a>
+        <a href="https://github.com/cliteka-cell" target="_blank" class="btn-ghost">GitHub</a>
+        <a href="#contact" class="btn-ghost">Contact</a>
       </div>
       <div class="hero-stats">
         <div class="stat-item">
-          <div class="stat-value">3+</div>
+          <div class="stat-value">12+</div>
           <div class="stat-label">Projects shipped</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value">Pine&nbsp;v6</div>
-          <div class="stat-label">TradingView expert</div>
+          <div class="stat-value">F1&nbsp;0.90</div>
+          <div class="stat-label">Best NLP score</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value">Python</div>
-          <div class="stat-label">Primary language</div>
+          <div class="stat-value">18&nbsp;ver.</div>
+          <div class="stat-label">ARMAS iterations</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">94.3%</div>
+          <div class="stat-label">Turkish NLP acc.</div>
         </div>
       </div>
     </div>
@@ -71,13 +77,119 @@
     <div class="fade-in">
       <p class="section-label">// work</p>
       <h2 class="section-title">Projects</h2>
-      <p class="section-sub">Things I've built — indicators, apps, and tools for traders.</p>
+      <p class="section-sub">From fine-tuning transformers to live trading systems — everything I've shipped.</p>
     </div>
 
-    <div class="projects-grid">
+    <!-- Filter tabs -->
+    <div class="filter-tabs fade-in">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nlp">NLP &amp; ML</button>
+      <button class="filter-btn" data-filter="trading">Trading</button>
+      <button class="filter-btn" data-filter="apps">Apps &amp; Tools</button>
+      <button class="filter-btn" data-filter="data">Data Science</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- ── NLP & ML ──────────────────────────────────────────────── -->
+
+      <!-- Turkish NLP Benchmark -->
+      <div class="project-card" data-category="nlp">
+        <div class="project-card-top">
+          <div class="project-icon">🔬</div>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/Reshiman/turkish-nlp-benchmark" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Demo
+            </a>
+            <a href="https://github.com/cliteka-cell/turkish-nlp-benchmark" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">Turkish NLP Benchmark</div>
+        <div class="project-result">BERTurk 94.3% &nbsp;·&nbsp; mBERT 84.4% &nbsp;·&nbsp; Zero-shot 41.7%</div>
+        <p class="project-desc">
+          Three-way benchmark comparing English DistilBERT (zero-shot), mBERT (multilingual), and BERTurk on Turkish sentiment analysis.
+          Proves language-specialized models decisively outperform multilingual ones — BERTurk's morphological awareness handles agglutinative structures
+          that general tokenizers can't. Interactive live demo lets you test all three models in real time.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">HuggingFace</span>
+          <span class="tag accent">BERTurk</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Gradio</span>
+          <span class="tag">Turkish NLP</span>
+        </div>
+      </div>
+
+      <!-- Stance Detection -->
+      <div class="project-card" data-category="nlp">
+        <div class="project-card-top">
+          <div class="project-icon">⚖️</div>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/Reshiman/stance-detection" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Demo
+            </a>
+            <a href="https://github.com/cliteka-cell/stance-detection" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">Stance Detection</div>
+        <div class="project-result">F1 0.90 &nbsp;·&nbsp; Acc 90.2% &nbsp;·&nbsp; 30k arguments</div>
+        <p class="project-desc">
+          Fine-tuned DistilBERT on the IBM Argument Quality dataset to classify debate arguments as PRO or CON.
+          Explores stance ambiguity — how identical statements can support opposing positions depending on topic context.
+          Trained on 30,000 annotated examples with a perfectly balanced dataset.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">DistilBERT</span>
+          <span class="tag accent">HuggingFace</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Gradio</span>
+          <span class="tag">NLP</span>
+        </div>
+      </div>
+
+      <!-- NER -->
+      <div class="project-card" data-category="nlp">
+        <div class="project-card-top">
+          <div class="project-icon">🏷️</div>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/Reshiman/ner-wikiann" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Demo
+            </a>
+            <a href="https://github.com/cliteka-cell/ner-wikiann" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">Named Entity Recognition</div>
+        <div class="project-result">F1 0.82 &nbsp;·&nbsp; Acc 92.9% &nbsp;·&nbsp; 80k tokens reviewed</div>
+        <p class="project-desc">
+          Fine-tuned DistilBERT on WikiANN English (20k sentences) for PER / ORG / LOC entity detection.
+          Manually reviewed 80k test tokens — found 74% of errors were misclassifications rather than missed detections,
+          mostly LOC/ORG confusion on ambiguous geopolitical names. Some model predictions outperformed original labels.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">DistilBERT</span>
+          <span class="tag accent">HuggingFace</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Token Classification</span>
+          <span class="tag">WikiANN</span>
+        </div>
+      </div>
+
+      <!-- ── TRADING ─────────────────────────────────────────────── -->
 
       <!-- Confluence Array -->
-      <div class="project-card">
+      <div class="project-card" data-category="trading">
         <div class="project-card-top">
           <div class="project-icon">
             <img src="assets/logo-icon.svg" width="26" height="26" alt=""/>
@@ -90,21 +202,78 @@
           </div>
         </div>
         <div class="project-name">Confluence Array</div>
+        <div class="project-result">3 trading modes &nbsp;·&nbsp; Pine Script v6 &nbsp;·&nbsp; Commercial product</div>
         <p class="project-desc">
-          Professional-grade TradingView indicator suite for confluence zone detection.
-          Multi-mode auto-detection (intraday / hourly / macro), ARMAS bands, CVD divergence,
-          open interest analysis, session tracking, and a full confluence scoring engine.
+          Professional TradingView indicator suite for confluence zone detection.
+          Auto-detects the trading mode (intraday / hourly / macro) and loads the relevant levels —
+          ARMAS bands, VWAP, FVGs, market profile, open interest signal matrix, CVD divergence,
+          session tracking, and a full scoring engine that ranks zones by confluence strength.
         </p>
         <div class="project-tags">
           <span class="tag accent">Pine Script v6</span>
           <span class="tag">TradingView</span>
-          <span class="tag">Indicators</span>
-          <span class="tag">Algo Trading</span>
+          <span class="tag">Order Flow</span>
+          <span class="tag">Market Profile</span>
+          <span class="tag green">Commercial</span>
+        </div>
+      </div>
+
+      <!-- ARMAS RL -->
+      <div class="project-card" data-category="trading">
+        <div class="project-card-top">
+          <div class="project-icon">🤖</div>
+          <div class="project-links">
+            <a href="https://github.com/cliteka-cell/armas-rl" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">ARMAS RL Trading Agent</div>
+        <div class="project-result">6 reward designs iterated &nbsp;·&nbsp; Documented negative result</div>
+        <p class="project-desc">
+          Hybrid RL agent (MaskablePPO) learning trade timing for the ARMAS mean-reversion strategy on SP500 futures.
+          Iterated through 6 reward designs to escape degenerate policies. Key finding: signal edge (+0.056% per touch)
+          is smaller than commission friction (~0.2%), making ML application premature. Documented as a rigorous negative result.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Reinforcement Learning</span>
+          <span class="tag">Gymnasium</span>
+          <span class="tag">Stable-Baselines3</span>
+          <span class="tag">MaskablePPO</span>
+          <span class="tag">SP500</span>
+        </div>
+      </div>
+
+      <!-- ARMAS EA -->
+      <div class="project-card" data-category="trading">
+        <div class="project-card-top">
+          <div class="project-icon">📈</div>
+          <div class="project-links">
+            <a href="https://github.com/cliteka-cell/ARMAS_Project_Full" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">ARMAS: Algorithmic S&amp;P EA</div>
+        <div class="project-result">18 versions &nbsp;·&nbsp; Python → MQL5 production</div>
+        <p class="project-desc">
+          Mean-reversion Expert Advisor for MetaTrader 5 evolved over 18 iterations from a Python backtest to a live production system.
+          Uses EWM bands with RSI, ATR, and slope filters.
+          Optuna for hyperparameter optimization and ML training data generated from live trade history.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">MQL5</span>
+          <span class="tag">Python</span>
+          <span class="tag">Optuna</span>
+          <span class="tag">MetaTrader 5</span>
+          <span class="tag">Backtesting</span>
         </div>
       </div>
 
       <!-- Trading Journal -->
-      <div class="project-card">
+      <div class="project-card" data-category="trading">
         <div class="project-card-top">
           <div class="project-icon">📓</div>
           <div class="project-links">
@@ -119,10 +288,12 @@
           </div>
         </div>
         <div class="project-name">Trading Journal</div>
+        <div class="project-result">Multi-journal &nbsp;·&nbsp; MT5 import &nbsp;·&nbsp; PDF export</div>
         <p class="project-desc">
-          Full-featured trading journal app built with Python and Streamlit.
-          Multi-journal support, MT5 import, pre/post trade analysis with screenshots,
-          equity curve, analytics, calendar heatmap, hall of fame, and PDF export.
+          Full-featured trading journal built with Python and Streamlit.
+          Multi-journal support, MT5 report import, pre/post/position analysis with screenshot upload,
+          equity curve, calendar heatmap, analytics by session/hour/day, Hall of Fame, and PDF export.
+          Used daily in real trading.
         </p>
         <div class="project-tags">
           <span class="tag accent">Python</span>
@@ -133,8 +304,65 @@
         </div>
       </div>
 
+      <!-- ── APPS & TOOLS ────────────────────────────────────────── -->
+
+      <!-- ALES Oracle -->
+      <div class="project-card" data-category="apps">
+        <div class="project-card-top">
+          <div class="project-icon">📚</div>
+          <div class="project-links">
+            <a href="https://ales-oracle.streamlit.app" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Live
+            </a>
+          </div>
+        </div>
+        <div class="project-name">ALES Oracle</div>
+        <div class="project-result">1,400+ real past questions &nbsp;·&nbsp; Gemini 2.5 Flash</div>
+        <p class="project-desc">
+          AI-powered exam prep tool for the Turkish ALES university entrance exam.
+          Pulls from a database of 1,400+ real past questions to generate personalized practice sets and
+          step-by-step solutions using Gemini 2.5 Flash. Includes study formula cards ranked by historical frequency.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Gemini 2.5</span>
+          <span class="tag">Python</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Pandas</span>
+          <span class="tag green">Live</span>
+        </div>
+      </div>
+
+      <!-- İzmir Acil -->
+      <div class="project-card" data-category="apps">
+        <div class="project-card-top">
+          <div class="project-icon">🚨</div>
+          <div class="project-links">
+            <a href="https://izmir-acil.streamlit.app" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Live
+            </a>
+          </div>
+        </div>
+        <div class="project-name">İzmir Acil</div>
+        <div class="project-result">4,600+ verified services &nbsp;·&nbsp; GPS-based sorting</div>
+        <p class="project-desc">
+          Emergency service finder for İzmir with 4,600+ verified entries.
+          "Open Now" filtering checks current time against business hours.
+          GPS-based distance sorting, mobile-friendly map, and quick-action buttons for WhatsApp, calling, and Google Maps directions.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Python</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Folium</span>
+          <span class="tag">Geopy</span>
+          <span class="tag green">Live</span>
+        </div>
+      </div>
+
       <!-- Confluence Array Site -->
-      <div class="project-card">
+      <div class="project-card" data-category="apps">
         <div class="project-card-top">
           <div class="project-icon">🌐</div>
           <div class="project-links">
@@ -149,20 +377,77 @@
           </div>
         </div>
         <div class="project-name">Confluence Array — Landing Page</div>
+        <div class="project-result">Custom domain &nbsp;·&nbsp; Galaxy canvas &nbsp;·&nbsp; Full SEO</div>
         <p class="project-desc">
-          Marketing site for the Confluence Array indicator suite.
-          Galaxy canvas background, animated typing hero, pricing toggle,
-          Pleiades star cluster logo, and full SEO setup with custom domain.
+          Marketing site for the Confluence Array indicator. Galaxy canvas animation with twinkling stars and nebula glows,
+          animated typing hero, Pleiades star cluster SVG logo (hand-coded), pricing toggle,
+          live preview integration, and full SEO setup with custom domain on GitHub Pages.
         </p>
         <div class="project-tags">
           <span class="tag">HTML / CSS / JS</span>
           <span class="tag">Canvas API</span>
+          <span class="tag">SVG</span>
           <span class="tag">GitHub Pages</span>
-          <span class="tag">SEO</span>
+          <span class="tag green">Live</span>
         </div>
       </div>
 
-    </div>
+      <!-- ── DATA SCIENCE ────────────────────────────────────────── -->
+
+      <!-- House Price Prediction -->
+      <div class="project-card" data-category="data">
+        <div class="project-card-top">
+          <div class="project-icon">🏠</div>
+          <div class="project-links">
+            <a href="https://github.com/cliteka-cell/House_Price_Prediction" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">House Price Prediction</div>
+        <div class="project-result">R² 0.944 &nbsp;·&nbsp; RMSE $21,224 &nbsp;·&nbsp; XGBoost</div>
+        <p class="project-desc">
+          ML regression pipeline on the Ames Housing Dataset (80 variables, 3k properties).
+          Compared Linear Regression, Ridge, Random Forest, and XGBoost after feature engineering
+          (TotalSF, TotalBaths, HouseAge) and log target transformation. XGBoost achieved R² 0.944.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">XGBoost</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Python</span>
+          <span class="tag">Feature Engineering</span>
+        </div>
+      </div>
+
+      <!-- E-Commerce Analysis -->
+      <div class="project-card" data-category="data">
+        <div class="project-card-top">
+          <div class="project-icon">🛒</div>
+          <div class="project-links">
+            <a href="https://github.com/cliteka-cell/E-Commerce-Analysis" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">E-Commerce Customer Behavior</div>
+        <div class="project-result">540k transactions &nbsp;·&nbsp; RFM segmentation &nbsp;·&nbsp; Pareto 80/20</div>
+        <p class="project-desc">
+          Analyzed 540k transactions from a UK wholesale gift retailer.
+          EDA, Pareto analysis (top 26% of customers → 80% of revenue), RFM segmentation into Champions / At-Risk / Lost cohorts,
+          and a cohort retention heatmap revealing 20.6% month-1 retention and 33% churn.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Seaborn</span>
+          <span class="tag">RFM</span>
+          <span class="tag">Cohort Analysis</span>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
   </div>
 </section>
 
@@ -176,18 +461,19 @@
     <div class="about-grid">
       <div class="about-text fade-in">
         <p>
-          I'm a <span>developer and active trader</span> who builds the tools I wish existed.
-          My work lives at the intersection of financial markets and software — from
-          low-level Pine Script indicator engines to full Python trading apps.
+          <span>Linguistics graduate from Boğaziçi University</span>, currently working as an
+          <span>AI/LLM evaluator at Yandex</span> with a focus on NLP and machine learning engineering.
         </p>
         <p>
-          I focus on <span>shipping things that actually work</span> in real trading environments —
-          tools I use myself every day. No bloat, no unnecessary abstractions.
-          Just clean, purposeful software.
+          I build at the intersection of <span>language, machine learning, and financial markets</span>.
+          My NLP work spans transformer fine-tuning, multilingual benchmarking, and evaluation methodology.
+          My trading projects range from Pine Script indicators to reinforcement learning agents —
+          including documented negative results, because honest engineering matters.
         </p>
         <p>
-          Currently working on expanding the <span>Confluence Array</span> ecosystem —
-          better indicators, better analytics, better user experience.
+          I care about <span>shipping things that actually work</span> —
+          tools I'd use myself, results I'd stake a claim on.
+          No bloat, no hype.
         </p>
       </div>
       <div class="fade-in">
@@ -195,20 +481,35 @@
           <div class="skills-group-label">Languages</div>
           <div class="skills-list">
             <span class="skill-pill">Python</span>
-            <span class="skill-pill">Pine Script v6</span>
-            <span class="skill-pill">JavaScript</span>
-            <span class="skill-pill">HTML / CSS</span>
             <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Pine Script v6</span>
+            <span class="skill-pill">MQL5 / C#</span>
+            <span class="skill-pill">R</span>
+            <span class="skill-pill">JavaScript</span>
           </div>
         </div>
         <div class="skills-group">
-          <div class="skills-group-label">Tools & Frameworks</div>
+          <div class="skills-group-label">ML &amp; NLP</div>
           <div class="skills-list">
-            <span class="skill-pill">Streamlit</span>
+            <span class="skill-pill">HuggingFace</span>
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">Scikit-learn</span>
+            <span class="skill-pill">XGBoost</span>
+            <span class="skill-pill">Stable-Baselines3</span>
+            <span class="skill-pill">LLM Evaluation</span>
+            <span class="skill-pill">Fine-tuning</span>
+            <span class="skill-pill">NER</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-group-label">Data &amp; Tools</div>
+          <div class="skills-list">
             <span class="skill-pill">Pandas</span>
             <span class="skill-pill">Plotly</span>
-            <span class="skill-pill">Canvas API</span>
-            <span class="skill-pill">GitHub Pages</span>
+            <span class="skill-pill">Streamlit</span>
+            <span class="skill-pill">Folium / Geopy</span>
+            <span class="skill-pill">Optuna</span>
+            <span class="skill-pill">Gradio</span>
           </div>
         </div>
         <div class="skills-group">
@@ -216,9 +517,9 @@
           <div class="skills-list">
             <span class="skill-pill">TradingView</span>
             <span class="skill-pill">MetaTrader 5</span>
-            <span class="skill-pill">Confluence Zones</span>
-            <span class="skill-pill">Market Profile</span>
             <span class="skill-pill">Order Flow</span>
+            <span class="skill-pill">Market Profile</span>
+            <span class="skill-pill">Algorithmic Trading</span>
           </div>
         </div>
       </div>
@@ -232,7 +533,7 @@
     <div class="fade-in">
       <p class="section-label">// contact</p>
       <h2 class="section-title">Get in touch</h2>
-      <p class="section-sub">Have a project in mind, or just want to talk markets? I'm all ears.</p>
+      <p class="section-sub">Interested in working together, or just want to talk markets and models?</p>
     </div>
     <div class="contact-box fade-in">
       <form id="contact-form" action="https://formspree.io/f/xgoqgdqz" method="POST">
@@ -268,14 +569,14 @@
         Kerem
       </div>
       <div class="footer-links">
-        <a href="https://confluencearray.com" target="_blank">Confluence Array</a>
         <a href="https://github.com/cliteka-cell" target="_blank">GitHub</a>
+        <a href="https://confluencearray.com" target="_blank">Confluence Array</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="script.js?v=1"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
