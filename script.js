@@ -66,6 +66,35 @@
   draw();
 })();
 
+// Hero typing animation
+(function () {
+  const h1     = document.getElementById('hero-headline');
+  const line1  = document.getElementById('hero-line1');
+  const cursor = document.querySelector('.cursor-block');
+
+  const LINE1 = 'NLP. Markets.';
+  const LINE2 = 'Code that ships.';
+
+  function type(el, text, speed, done) {
+    let i = 0;
+    (function tick() {
+      el.textContent = text.slice(0, ++i);
+      if (i < text.length) setTimeout(tick, speed);
+      else if (done) setTimeout(done, 220);
+    })();
+  }
+
+  setTimeout(() => {
+    type(line1, LINE1, 72, () => {
+      const br   = document.createElement('br');
+      const span = document.createElement('span');
+      h1.insertBefore(br,   cursor);
+      h1.insertBefore(span, cursor);
+      type(span, LINE2, 72, null);
+    });
+  }, 500);
+})();
+
 // Nav scroll effect
 (function () {
   const nav = document.querySelector('nav');
