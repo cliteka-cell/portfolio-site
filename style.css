@@ -156,6 +156,13 @@ nav.scrolled {
   color: var(--text);
 }
 
+.hero-gradient {
+  background: linear-gradient(90deg, #2060f0, #5090ff, #7fb0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .cursor-block {
   display: inline-block;
   width: 0.5em;

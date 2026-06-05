@@ -72,8 +72,9 @@
   const line1  = document.getElementById('hero-line1');
   const cursor = document.querySelector('.cursor-block');
 
-  const LINE1 = 'NLP. Markets.';
-  const LINE2 = 'Code that ships.';
+  const LINE1  = 'NLP. Markets.';
+  const LINE2A = 'Code that ';
+  const LINE2B = 'ships.';
 
   function type(el, text, speed, done) {
     let i = 0;
@@ -86,11 +87,16 @@
 
   setTimeout(() => {
     type(line1, LINE1, 72, () => {
-      const br   = document.createElement('br');
-      const span = document.createElement('span');
-      h1.insertBefore(br,   cursor);
-      h1.insertBefore(span, cursor);
-      type(span, LINE2, 72, null);
+      const br    = document.createElement('br');
+      const spanA = document.createElement('span');
+      h1.insertBefore(br,    cursor);
+      h1.insertBefore(spanA, cursor);
+      type(spanA, LINE2A, 72, () => {
+        const spanB = document.createElement('span');
+        spanB.className = 'hero-gradient';
+        h1.insertBefore(spanB, cursor);
+        type(spanB, LINE2B, 72, null);
+      });
     });
   }, 500);
 })();
