@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kerem — Developer & Trader</title>
+  <meta name="description" content="Portfolio of Kerem — developer and trader. Creator of Confluence Array, Trading Journal, and more."/>
+  <meta property="og:title" content="Kerem — Developer & Trader"/>
+  <meta property="og:description" content="Building tools at the intersection of trading and technology."/>
+  <meta property="og:type" content="website"/>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg"/>
+  <link rel="stylesheet" href="style.css?v=1"/>
+</head>
+<body>
+
+<canvas id="galaxy"></canvas>
+
+<!-- ── NAV ──────────────────────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="assets/logo-icon.svg" width="32" height="32" style="display:block;" alt=""/>
+      Kerem
+    </a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-dot"></span>
+        Developer &amp; Trader
+      </div>
+      <h1 class="hero-name">I build tools<br/>traders actually use.</h1>
+      <p class="hero-tagline">
+        From <span>TradingView indicators</span> to full-stack trading apps —
+        I ship things that work at the intersection of markets and code.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">3+</div>
+          <div class="stat-label">Projects shipped</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">Pine&nbsp;v6</div>
+          <div class="stat-label">TradingView expert</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">Python</div>
+          <div class="stat-label">Primary language</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ──────────────────────────────────────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <div class="fade-in">
+      <p class="section-label">// work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Things I've built — indicators, apps, and tools for traders.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Confluence Array -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">
+            <img src="assets/logo-icon.svg" width="26" height="26" alt=""/>
+          </div>
+          <div class="project-links">
+            <a href="https://confluencearray.com" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Live
+            </a>
+          </div>
+        </div>
+        <div class="project-name">Confluence Array</div>
+        <p class="project-desc">
+          Professional-grade TradingView indicator suite for confluence zone detection.
+          Multi-mode auto-detection (intraday / hourly / macro), ARMAS bands, CVD divergence,
+          open interest analysis, session tracking, and a full confluence scoring engine.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Pine Script v6</span>
+          <span class="tag">TradingView</span>
+          <span class="tag">Indicators</span>
+          <span class="tag">Algo Trading</span>
+        </div>
+      </div>
+
+      <!-- Trading Journal -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">📓</div>
+          <div class="project-links">
+            <a href="https://trading-journal-preview.streamlit.app" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Preview
+            </a>
+            <a href="https://github.com/cliteka-cell/trading-journal-preview" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">Trading Journal</div>
+        <p class="project-desc">
+          Full-featured trading journal app built with Python and Streamlit.
+          Multi-journal support, MT5 import, pre/post trade analysis with screenshots,
+          equity curve, analytics, calendar heatmap, hall of fame, and PDF export.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Python</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Plotly</span>
+          <span class="tag green">Live</span>
+        </div>
+      </div>
+
+      <!-- Confluence Array Site -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">🌐</div>
+          <div class="project-links">
+            <a href="https://confluencearray.com" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Live
+            </a>
+            <a href="https://github.com/cliteka-cell/confluence-array-site" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-name">Confluence Array — Landing Page</div>
+        <p class="project-desc">
+          Marketing site for the Confluence Array indicator suite.
+          Galaxy canvas background, animated typing hero, pricing toggle,
+          Pleiades star cluster logo, and full SEO setup with custom domain.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML / CSS / JS</span>
+          <span class="tag">Canvas API</span>
+          <span class="tag">GitHub Pages</span>
+          <span class="tag">SEO</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ─────────────────────────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <div class="fade-in">
+      <p class="section-label">// about</p>
+      <h2 class="section-title">Who I am</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>
+          I'm a <span>developer and active trader</span> who builds the tools I wish existed.
+          My work lives at the intersection of financial markets and software — from
+          low-level Pine Script indicator engines to full Python trading apps.
+        </p>
+        <p>
+          I focus on <span>shipping things that actually work</span> in real trading environments —
+          tools I use myself every day. No bloat, no unnecessary abstractions.
+          Just clean, purposeful software.
+        </p>
+        <p>
+          Currently working on expanding the <span>Confluence Array</span> ecosystem —
+          better indicators, better analytics, better user experience.
+        </p>
+      </div>
+      <div class="fade-in">
+        <div class="skills-group">
+          <div class="skills-group-label">Languages</div>
+          <div class="skills-list">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Pine Script v6</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">HTML / CSS</span>
+            <span class="skill-pill">SQL</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-group-label">Tools & Frameworks</div>
+          <div class="skills-list">
+            <span class="skill-pill">Streamlit</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">Plotly</span>
+            <span class="skill-pill">Canvas API</span>
+            <span class="skill-pill">GitHub Pages</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-group-label">Trading</div>
+          <div class="skills-list">
+            <span class="skill-pill">TradingView</span>
+            <span class="skill-pill">MetaTrader 5</span>
+            <span class="skill-pill">Confluence Zones</span>
+            <span class="skill-pill">Market Profile</span>
+            <span class="skill-pill">Order Flow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <div class="fade-in">
+      <p class="section-label">// contact</p>
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-sub">Have a project in mind, or just want to talk markets? I'm all ears.</p>
+    </div>
+    <div class="contact-box fade-in">
+      <form id="contact-form" action="https://formspree.io/f/xgoqgdqz" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required/>
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="you@example.com" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fmsg">Message</label>
+          <textarea id="fmsg" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p id="form-status"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="assets/logo-icon.svg" width="28" height="28" alt=""/>
+        Kerem
+      </div>
+      <div class="footer-links">
+        <a href="https://confluencearray.com" target="_blank">Confluence Array</a>
+        <a href="https://github.com/cliteka-cell" target="_blank">GitHub</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js?v=1"></script>
+</body>
+</html>
