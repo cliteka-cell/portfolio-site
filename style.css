@@ -345,12 +345,20 @@ section {
 }
 .project-link:hover { color: var(--text); border-color: #444; }
 .project-link svg { flex-shrink: 0; }
+button.project-link {
+  background: none;
+  cursor: pointer;
+  font-family: var(--font);
+}
 
 .project-name {
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.01em;
+  flex: 1;
+  min-width: 0;
+  align-self: center;
 }
 
 .project-desc {
