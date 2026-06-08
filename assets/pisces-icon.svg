@@ -39,152 +39,152 @@
 
   <!-- Constellation lines -->
   <g stroke="#4d8eff" stroke-opacity="0.22" stroke-width="1" fill="none" stroke-linecap="round">
-    <!-- Circlet (western fish head) — closed ring -->
+    <!-- Circlet (western fish head) - closed ring -->
     <polygon points="88,268 68,284 72,308 92,320 114,308 112,280"/>
     <!-- West cord: κ(112,280) → Alrescha(228,200) -->
     <polyline points="112,280 135,268 158,252 180,235 202,218 228,200"/>
     <!-- East cord: Alrescha → δ(316,124) -->
     <polyline points="228,200 252,182 272,163 294,144 316,124"/>
-    <!-- Eastern fish — tail arc: δ → ψ² → η(brightest) -->
+    <!-- Eastern fish - tail arc: δ → ψ² → η(brightest) -->
     <polyline points="316,124 342,102 318,86"/>
-    <!-- Eastern fish — body: η → χ → φ → ρ → back to ζ -->
+    <!-- Eastern fish - body: η → χ → φ → ρ → back to ζ -->
     <polyline points="318,86 292,94 272,116 262,148 272,163"/>
   </g>
 
-  <!-- ── ETA PISCIUM — brightest star, eastern fish head ── -->
+  <!-- ── ETA PISCIUM - brightest star, eastern fish head ── -->
   <circle cx="318" cy="86" r="42" fill="#1a4acc" opacity="0.10" filter="url(#g-xl)"/>
   <circle cx="318" cy="86" r="28" fill="#2060f0" opacity="0.20" filter="url(#g-lg)"/>
   <circle cx="318" cy="86" r="14" fill="#5090ff" opacity="0.55" filter="url(#g-md)"/>
   <circle cx="318" cy="86" r="6"  fill="#b8d4ff" opacity="0.85" filter="url(#g-xs)"/>
   <circle cx="318" cy="86" r="4.5" fill="#ffffff"/>
 
-  <!-- ── ALRESCHA (α) — knot, cord junction ── -->
+  <!-- ── ALRESCHA (α) - knot, cord junction ── -->
   <circle cx="228" cy="200" r="32" fill="#1a4acc" opacity="0.10" filter="url(#g-xl)"/>
   <circle cx="228" cy="200" r="20" fill="#2060f0" opacity="0.18" filter="url(#g-lg)"/>
   <circle cx="228" cy="200" r="10" fill="#5090ff" opacity="0.50" filter="url(#g-md)"/>
   <circle cx="228" cy="200" r="4.5" fill="#c8e0ff" opacity="0.85" filter="url(#g-xs)"/>
   <circle cx="228" cy="200" r="3.5" fill="#ffffff"/>
 
-  <!-- ── GAMMA (γ) — circlet, upper anchor ── -->
+  <!-- ── GAMMA (γ) - circlet, upper anchor ── -->
   <circle cx="88" cy="268" r="26" fill="#1a4acc" opacity="0.09" filter="url(#g-xl)"/>
   <circle cx="88" cy="268" r="16" fill="#2060f0" opacity="0.16" filter="url(#g-lg)"/>
   <circle cx="88" cy="268" r="8"  fill="#5090ff" opacity="0.45" filter="url(#g-md)"/>
   <circle cx="88" cy="268" r="3.5" fill="#d4e8ff" opacity="0.85" filter="url(#g-xs)"/>
   <circle cx="88" cy="268" r="2.6" fill="#ffffff"/>
 
-  <!-- ── 19 PISCIUM — circlet bottom ── -->
+  <!-- ── 19 PISCIUM - circlet bottom ── -->
   <circle cx="92" cy="320" r="24" fill="#1a4acc" opacity="0.09" filter="url(#g-xl)"/>
   <circle cx="92" cy="320" r="15" fill="#2060f0" opacity="0.16" filter="url(#g-lg)"/>
   <circle cx="92" cy="320" r="7.5" fill="#5090ff" opacity="0.44" filter="url(#g-md)"/>
   <circle cx="92" cy="320" r="3.2" fill="#d4e8ff" opacity="0.85" filter="url(#g-xs)"/>
   <circle cx="92" cy="320" r="2.4" fill="#ffffff"/>
 
-  <!-- ── CHI (χ) — eastern fish ── -->
+  <!-- ── CHI (χ) - eastern fish ── -->
   <circle cx="292" cy="94" r="22" fill="#1a4acc" opacity="0.09" filter="url(#g-xl)"/>
   <circle cx="292" cy="94" r="14" fill="#2060f0" opacity="0.15" filter="url(#g-lg)"/>
   <circle cx="292" cy="94" r="7"  fill="#5090ff" opacity="0.42" filter="url(#g-md)"/>
   <circle cx="292" cy="94" r="3"  fill="#d4e8ff" opacity="0.82" filter="url(#g-xs)"/>
   <circle cx="292" cy="94" r="2.2" fill="#ffffff"/>
 
-  <!-- ── PSI² (ψ²) — fish tail ── -->
+  <!-- ── PSI² (ψ²) - fish tail ── -->
   <circle cx="342" cy="102" r="20" fill="#1a4acc" opacity="0.08" filter="url(#g-xl)"/>
   <circle cx="342" cy="102" r="12" fill="#2060f0" opacity="0.14" filter="url(#g-md)"/>
   <circle cx="342" cy="102" r="6"  fill="#5090ff" opacity="0.40" filter="url(#g-sm)"/>
   <circle cx="342" cy="102" r="2.6" fill="#e0eeff" opacity="0.82" filter="url(#g-xs)"/>
   <circle cx="342" cy="102" r="2"  fill="#ffffff"/>
 
-  <!-- ── DELTA (δ) — cord/fish junction ── -->
+  <!-- ── DELTA (δ) - cord/fish junction ── -->
   <circle cx="316" cy="124" r="20" fill="#1a4acc" opacity="0.08" filter="url(#g-xl)"/>
   <circle cx="316" cy="124" r="12" fill="#2060f0" opacity="0.14" filter="url(#g-md)"/>
   <circle cx="316" cy="124" r="6"  fill="#5090ff" opacity="0.40" filter="url(#g-sm)"/>
   <circle cx="316" cy="124" r="2.6" fill="#e0eeff" opacity="0.82" filter="url(#g-xs)"/>
   <circle cx="316" cy="124" r="2"  fill="#ffffff"/>
 
-  <!-- ── EPSILON (ε) — east cord ── -->
+  <!-- ── EPSILON (ε) - east cord ── -->
   <circle cx="294" cy="144" r="18" fill="#1a4acc" opacity="0.08" filter="url(#g-xl)"/>
   <circle cx="294" cy="144" r="11" fill="#2060f0" opacity="0.13" filter="url(#g-md)"/>
   <circle cx="294" cy="144" r="5.5" fill="#5090ff" opacity="0.38" filter="url(#g-sm)"/>
   <circle cx="294" cy="144" r="2.3" fill="#e0eeff" opacity="0.80" filter="url(#g-xs)"/>
   <circle cx="294" cy="144" r="1.7" fill="#ffffff"/>
 
-  <!-- ── PHI (φ) — eastern fish body ── -->
+  <!-- ── PHI (φ) - eastern fish body ── -->
   <circle cx="272" cy="116" r="18" fill="#1a4acc" opacity="0.08" filter="url(#g-xl)"/>
   <circle cx="272" cy="116" r="11" fill="#2060f0" opacity="0.13" filter="url(#g-md)"/>
   <circle cx="272" cy="116" r="5.5" fill="#5090ff" opacity="0.38" filter="url(#g-sm)"/>
   <circle cx="272" cy="116" r="2.3" fill="#e0eeff" opacity="0.80" filter="url(#g-xs)"/>
   <circle cx="272" cy="116" r="1.7" fill="#ffffff"/>
 
-  <!-- ── RHO (ρ) — eastern fish body ── -->
+  <!-- ── RHO (ρ) - eastern fish body ── -->
   <circle cx="262" cy="148" r="18" fill="#1a4acc" opacity="0.08" filter="url(#g-xl)"/>
   <circle cx="262" cy="148" r="11" fill="#2060f0" opacity="0.13" filter="url(#g-md)"/>
   <circle cx="262" cy="148" r="5.5" fill="#5090ff" opacity="0.38" filter="url(#g-sm)"/>
   <circle cx="262" cy="148" r="2.3" fill="#e0eeff" opacity="0.80" filter="url(#g-xs)"/>
   <circle cx="262" cy="148" r="1.7" fill="#ffffff"/>
 
-  <!-- ── ZETA (ζ) — east cord ── -->
+  <!-- ── ZETA (ζ) - east cord ── -->
   <circle cx="272" cy="163" r="16" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="272" cy="163" r="10" fill="#2060f0" opacity="0.12" filter="url(#g-md)"/>
   <circle cx="272" cy="163" r="5"  fill="#5090ff" opacity="0.35" filter="url(#g-sm)"/>
   <circle cx="272" cy="163" r="2"  fill="#e8f2ff" opacity="0.78" filter="url(#g-xs)"/>
   <circle cx="272" cy="163" r="1.5" fill="#ffffff"/>
 
-  <!-- ── XI (ξ) — east cord ── -->
+  <!-- ── XI (ξ) - east cord ── -->
   <circle cx="252" cy="182" r="16" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="252" cy="182" r="10" fill="#2060f0" opacity="0.12" filter="url(#g-md)"/>
   <circle cx="252" cy="182" r="5"  fill="#5090ff" opacity="0.35" filter="url(#g-sm)"/>
   <circle cx="252" cy="182" r="2"  fill="#e8f2ff" opacity="0.78" filter="url(#g-xs)"/>
   <circle cx="252" cy="182" r="1.5" fill="#ffffff"/>
 
-  <!-- ── MU (μ) — west cord ── -->
+  <!-- ── MU (μ) - west cord ── -->
   <circle cx="202" cy="218" r="15" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="202" cy="218" r="9"  fill="#2060f0" opacity="0.11" filter="url(#g-md)"/>
   <circle cx="202" cy="218" r="4.5" fill="#5090ff" opacity="0.33" filter="url(#g-sm)"/>
   <circle cx="202" cy="218" r="1.9" fill="#e8f2ff" opacity="0.76" filter="url(#g-xs)"/>
   <circle cx="202" cy="218" r="1.4" fill="#ffffff"/>
 
-  <!-- ── NU (ν) — west cord ── -->
+  <!-- ── NU (ν) - west cord ── -->
   <circle cx="180" cy="235" r="15" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="180" cy="235" r="9"  fill="#2060f0" opacity="0.11" filter="url(#g-md)"/>
   <circle cx="180" cy="235" r="4.5" fill="#5090ff" opacity="0.33" filter="url(#g-sm)"/>
   <circle cx="180" cy="235" r="1.9" fill="#e8f2ff" opacity="0.76" filter="url(#g-xs)"/>
   <circle cx="180" cy="235" r="1.4" fill="#ffffff"/>
 
-  <!-- ── OMICRON (ο) — west cord ── -->
+  <!-- ── OMICRON (ο) - west cord ── -->
   <circle cx="158" cy="252" r="15" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="158" cy="252" r="9"  fill="#2060f0" opacity="0.11" filter="url(#g-md)"/>
   <circle cx="158" cy="252" r="4.5" fill="#5090ff" opacity="0.33" filter="url(#g-sm)"/>
   <circle cx="158" cy="252" r="1.9" fill="#e8f2ff" opacity="0.76" filter="url(#g-xs)"/>
   <circle cx="158" cy="252" r="1.4" fill="#ffffff"/>
 
-  <!-- ── OMEGA (ω) — west cord ── -->
+  <!-- ── OMEGA (ω) - west cord ── -->
   <circle cx="135" cy="268" r="15" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="135" cy="268" r="9"  fill="#2060f0" opacity="0.11" filter="url(#g-md)"/>
   <circle cx="135" cy="268" r="4.5" fill="#5090ff" opacity="0.33" filter="url(#g-sm)"/>
   <circle cx="135" cy="268" r="1.9" fill="#e8f2ff" opacity="0.76" filter="url(#g-xs)"/>
   <circle cx="135" cy="268" r="1.4" fill="#ffffff"/>
 
-  <!-- ── KAPPA (κ) — circlet cord join ── -->
+  <!-- ── KAPPA (κ) - circlet cord join ── -->
   <circle cx="112" cy="280" r="14" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="112" cy="280" r="9"  fill="#2060f0" opacity="0.11" filter="url(#g-md)"/>
   <circle cx="112" cy="280" r="4.5" fill="#5090ff" opacity="0.33" filter="url(#g-sm)"/>
   <circle cx="112" cy="280" r="1.9" fill="#e8f2ff" opacity="0.75" filter="url(#g-xs)"/>
   <circle cx="112" cy="280" r="1.4" fill="#ffffff"/>
 
-  <!-- ── THETA (θ) — circlet ── -->
+  <!-- ── THETA (θ) - circlet ── -->
   <circle cx="68" cy="284" r="16" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="68" cy="284" r="10" fill="#2060f0" opacity="0.12" filter="url(#g-md)"/>
   <circle cx="68" cy="284" r="5"  fill="#5090ff" opacity="0.35" filter="url(#g-sm)"/>
   <circle cx="68" cy="284" r="2"  fill="#e8f2ff" opacity="0.78" filter="url(#g-xs)"/>
   <circle cx="68" cy="284" r="1.5" fill="#ffffff"/>
 
-  <!-- ── IOTA (ι) — circlet ── -->
+  <!-- ── IOTA (ι) - circlet ── -->
   <circle cx="72" cy="308" r="16" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="72" cy="308" r="10" fill="#2060f0" opacity="0.12" filter="url(#g-md)"/>
   <circle cx="72" cy="308" r="5"  fill="#5090ff" opacity="0.35" filter="url(#g-sm)"/>
   <circle cx="72" cy="308" r="2"  fill="#e8f2ff" opacity="0.78" filter="url(#g-xs)"/>
   <circle cx="72" cy="308" r="1.5" fill="#ffffff"/>
 
-  <!-- ── LAMBDA (λ) — circlet ── -->
+  <!-- ── LAMBDA (λ) - circlet ── -->
   <circle cx="114" cy="308" r="16" fill="#1a4acc" opacity="0.07" filter="url(#g-xl)"/>
   <circle cx="114" cy="308" r="10" fill="#2060f0" opacity="0.12" filter="url(#g-md)"/>
   <circle cx="114" cy="308" r="5"  fill="#5090ff" opacity="0.35" filter="url(#g-sm)"/>
