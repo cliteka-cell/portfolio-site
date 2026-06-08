@@ -162,7 +162,7 @@
         headers: { Accept: 'application/json' }
       });
       if (res.ok) {
-        status.textContent = 'Message sent — I\'ll get back to you soon.';
+        status.textContent = 'Message sent - I\'ll get back to you soon.';
         status.style.color = '#00d084';
         form.reset();
       } else {
