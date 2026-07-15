@@ -95,7 +95,60 @@
 
     <div class="projects-grid" id="projects-grid">
 
-      <!--  NLP & ML  -->
+      <!--  AI & WORKFLOWS  -->
+
+      <!-- AI Investor -->
+      <div class="project-card" data-category="apps">
+        <div class="project-card-top">
+          <div class="project-name">AI Investor</div>
+          <div class="project-links">
+            <span class="project-link" style="opacity:.55;cursor:default;pointer-events:none;">Private</span>
+          </div>
+        </div>
+        <div class="project-result">18 scheduled jobs &nbsp;·&nbsp; 100% local, no external LLM API &nbsp;·&nbsp; Research only</div>
+        <p class="project-desc">
+          Self-hosted investment research system running fully on local hardware. A three-layer screener
+          (quant momentum, then a tool-calling web-search gather, then a deep thesis pass) covers large-cap,
+          Russell 2000, and crypto, backed by a living paper portfolio with stop-loss exits and inverse-volatility
+          sizing. It grades itself: a calibration job measures each conviction tier's forward return against a
+          passive benchmark. Research only by design - it never places a trade, broker keys stay empty.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Ollama</span>
+          <span class="tag accent">DeepSeek R1 32B</span>
+          <span class="tag">Local LLM</span>
+          <span class="tag">Qwen</span>
+          <span class="tag">SearXNG</span>
+        </div>
+      </div>
+
+      <!-- Zero-Shot Multilingual NER -->
+      <div class="project-card" data-category="nlp">
+        <div class="project-card-top">
+          <div class="project-name">Zero-Shot Multilingual NER</div>
+          <div class="project-links">
+            <a href="https://github.com/cliteka-cell/zero-shot-multilingual-ner" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-result">Zero-shot F1: tr 0.77 &nbsp;·&nbsp; de 0.75 &nbsp;·&nbsp; ar 0.50 &nbsp;·&nbsp; No target-language labels</div>
+        <p class="project-desc">
+          Cross-lingual NER transfer to Turkish, German, and Arabic with zero target-language labels.
+          XLM-RoBERTa backbone with contrastive alignment (InfoNCE on real OPUS-100 parallel sentences)
+          plus CoSDA-ML code-switch augmentation. A 5-config ablation, multi-seed runs, and a translate-train
+          baseline test the method rather than assume it - the ablation refutes its own thesis: plain full
+          fine-tuning beats the contrastive pipeline on German and Arabic. Reported as found, not softened.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">XLM-RoBERTa</span>
+          <span class="tag accent">Contrastive Learning</span>
+          <span class="tag">InfoNCE</span>
+          <span class="tag">Zero-Shot Transfer</span>
+          <span class="tag">seqeval</span>
+        </div>
+      </div>
 
       <!-- Turkish NLP Benchmark -->
       <div class="project-card" data-category="nlp">
@@ -187,35 +240,86 @@
         </div>
       </div>
 
-      <!-- Zero-Shot Multilingual NER -->
-      <div class="project-card" data-category="nlp">
+      <!-- ALES Oracle -->
+      <div class="project-card" data-category="apps">
         <div class="project-card-top">
-          <div class="project-name">Zero-Shot Multilingual NER</div>
+          <div class="project-name">ALES Oracle</div>
           <div class="project-links">
-            <a href="https://github.com/cliteka-cell/zero-shot-multilingual-ner" target="_blank" class="project-link">
+            <a href="https://ales-oracle.streamlit.app" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Live
+            </a>
+          </div>
+        </div>
+        <div class="project-result">1,400+ real past questions &nbsp;·&nbsp; Gemini 2.5 Flash</div>
+        <p class="project-desc">
+          AI-powered exam prep tool for the Turkish ALES university entrance exam.
+          Pulls from a database of 1,400+ real past questions to generate personalized practice sets and
+          step-by-step solutions using Gemini 2.5 Flash. Includes study formula cards ranked by historical frequency.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Gemini 2.5</span>
+          <span class="tag">Python</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Pandas</span>
+          <span class="tag green">Live</span>
+        </div>
+      </div>
+
+      <!--  DATA SCIENCE  -->
+
+      <!-- House Price Prediction -->
+      <div class="project-card" data-category="data">
+        <div class="project-card-top">
+          <div class="project-name">House Price Prediction</div>
+          <div class="project-links">
+            <a href="https://github.com/cliteka-cell/House_Price_Prediction" target="_blank" class="project-link">
               <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
               GitHub
             </a>
           </div>
         </div>
-        <div class="project-result">Zero-shot F1: tr 0.77 &nbsp;·&nbsp; de 0.75 &nbsp;·&nbsp; ar 0.50 &nbsp;·&nbsp; No target-language labels</div>
+        <div class="project-result">R² 0.944 &nbsp;·&nbsp; RMSE $21,224 &nbsp;·&nbsp; XGBoost</div>
         <p class="project-desc">
-          Cross-lingual NER transfer to Turkish, German, and Arabic with zero target-language labels.
-          XLM-RoBERTa backbone with contrastive alignment (InfoNCE on real OPUS-100 parallel sentences)
-          plus CoSDA-ML code-switch augmentation. A 5-config ablation, multi-seed runs, and a translate-train
-          baseline test the method rather than assume it - the ablation refutes its own thesis: plain full
-          fine-tuning beats the contrastive pipeline on German and Arabic. Reported as found, not softened.
+          ML regression pipeline on the Ames Housing Dataset (80 variables, 3k properties).
+          Compared Linear Regression, Ridge, Random Forest, and XGBoost after feature engineering
+          (TotalSF, TotalBaths, HouseAge) and log target transformation. XGBoost achieved R² 0.944.
         </p>
         <div class="project-tags">
-          <span class="tag accent">XLM-RoBERTa</span>
-          <span class="tag accent">Contrastive Learning</span>
-          <span class="tag">InfoNCE</span>
-          <span class="tag">Zero-Shot Transfer</span>
-          <span class="tag">seqeval</span>
+          <span class="tag accent">XGBoost</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Python</span>
+          <span class="tag">Feature Engineering</span>
         </div>
       </div>
 
-      <!--  TRADING  -->
+      <!-- E-Commerce Analysis -->
+      <div class="project-card" data-category="data">
+        <div class="project-card-top">
+          <div class="project-name">E-Commerce Customer Behavior</div>
+          <div class="project-links">
+            <a href="https://github.com/cliteka-cell/E-Commerce-Analysis" target="_blank" class="project-link">
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-result">540k transactions &nbsp;·&nbsp; RFM segmentation &nbsp;·&nbsp; Pareto 80/20</div>
+        <p class="project-desc">
+          Analyzed 540k transactions from a UK wholesale gift retailer.
+          EDA, Pareto analysis (top 26% of customers → 80% of revenue), RFM segmentation into Champions / At-Risk / Lost cohorts,
+          and a cohort retention heatmap revealing 20.6% month-1 retention and 33% churn.
+        </p>
+        <div class="project-tags">
+          <span class="tag accent">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Seaborn</span>
+          <span class="tag">RFM</span>
+          <span class="tag">Cohort Analysis</span>
+        </div>
+      </div>
+
+      <!--  TRADING & OTHER PROJECTS  -->
 
       <!-- Confluence Array -->
       <div class="project-card" data-category="trading">
@@ -499,59 +603,6 @@
         </div>
       </div>
 
-      <!--  APPS & TOOLS  -->
-
-      <!-- AI Investor -->
-      <div class="project-card" data-category="apps">
-        <div class="project-card-top">
-          <div class="project-name">AI Investor</div>
-          <div class="project-links">
-            <span class="project-link" style="opacity:.55;cursor:default;pointer-events:none;">Private</span>
-          </div>
-        </div>
-        <div class="project-result">18 scheduled jobs &nbsp;·&nbsp; 100% local, no external LLM API &nbsp;·&nbsp; Research only</div>
-        <p class="project-desc">
-          Self-hosted investment research system running fully on local hardware. A three-layer screener
-          (quant momentum, then a tool-calling web-search gather, then a deep thesis pass) covers large-cap,
-          Russell 2000, and crypto, backed by a living paper portfolio with stop-loss exits and inverse-volatility
-          sizing. It grades itself: a calibration job measures each conviction tier's forward return against a
-          passive benchmark. Research only by design - it never places a trade, broker keys stay empty.
-        </p>
-        <div class="project-tags">
-          <span class="tag accent">Ollama</span>
-          <span class="tag accent">DeepSeek R1 32B</span>
-          <span class="tag">Local LLM</span>
-          <span class="tag">Qwen</span>
-          <span class="tag">SearXNG</span>
-        </div>
-      </div>
-
-      <!-- ALES Oracle -->
-      <div class="project-card" data-category="apps">
-        <div class="project-card-top">
-          <div class="project-name">ALES Oracle</div>
-          <div class="project-links">
-            <a href="https://ales-oracle.streamlit.app" target="_blank" class="project-link">
-              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-              Live
-            </a>
-          </div>
-        </div>
-        <div class="project-result">1,400+ real past questions &nbsp;·&nbsp; Gemini 2.5 Flash</div>
-        <p class="project-desc">
-          AI-powered exam prep tool for the Turkish ALES university entrance exam.
-          Pulls from a database of 1,400+ real past questions to generate personalized practice sets and
-          step-by-step solutions using Gemini 2.5 Flash. Includes study formula cards ranked by historical frequency.
-        </p>
-        <div class="project-tags">
-          <span class="tag accent">Gemini 2.5</span>
-          <span class="tag">Python</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">Pandas</span>
-          <span class="tag green">Live</span>
-        </div>
-      </div>
-
       <!-- İzmir Acil -->
       <div class="project-card" data-category="apps">
         <div class="project-card-top">
@@ -606,59 +657,6 @@
           <span class="tag">SVG</span>
           <span class="tag">GitHub Pages</span>
           <span class="tag green">Live</span>
-        </div>
-      </div>
-
-      <!--  DATA SCIENCE  -->
-
-      <!-- House Price Prediction -->
-      <div class="project-card" data-category="data">
-        <div class="project-card-top">
-          <div class="project-name">House Price Prediction</div>
-          <div class="project-links">
-            <a href="https://github.com/cliteka-cell/House_Price_Prediction" target="_blank" class="project-link">
-              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-              GitHub
-            </a>
-          </div>
-        </div>
-        <div class="project-result">R² 0.944 &nbsp;·&nbsp; RMSE $21,224 &nbsp;·&nbsp; XGBoost</div>
-        <p class="project-desc">
-          ML regression pipeline on the Ames Housing Dataset (80 variables, 3k properties).
-          Compared Linear Regression, Ridge, Random Forest, and XGBoost after feature engineering
-          (TotalSF, TotalBaths, HouseAge) and log target transformation. XGBoost achieved R² 0.944.
-        </p>
-        <div class="project-tags">
-          <span class="tag accent">XGBoost</span>
-          <span class="tag">Scikit-learn</span>
-          <span class="tag">Python</span>
-          <span class="tag">Feature Engineering</span>
-        </div>
-      </div>
-
-      <!-- E-Commerce Analysis -->
-      <div class="project-card" data-category="data">
-        <div class="project-card-top">
-          <div class="project-name">E-Commerce Customer Behavior</div>
-          <div class="project-links">
-            <a href="https://github.com/cliteka-cell/E-Commerce-Analysis" target="_blank" class="project-link">
-              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-              GitHub
-            </a>
-          </div>
-        </div>
-        <div class="project-result">540k transactions &nbsp;·&nbsp; RFM segmentation &nbsp;·&nbsp; Pareto 80/20</div>
-        <p class="project-desc">
-          Analyzed 540k transactions from a UK wholesale gift retailer.
-          EDA, Pareto analysis (top 26% of customers → 80% of revenue), RFM segmentation into Champions / At-Risk / Lost cohorts,
-          and a cohort retention heatmap revealing 20.6% month-1 retention and 33% churn.
-        </p>
-        <div class="project-tags">
-          <span class="tag accent">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">Seaborn</span>
-          <span class="tag">RFM</span>
-          <span class="tag">Cohort Analysis</span>
         </div>
       </div>
 
